@@ -15,7 +15,8 @@ RUN wget http://dlib.net/files/dlib-19.6.tar.bz2; \
 	python setup.py install --yes USE_AVX_INSTRUCTIONS --yes DLIB_USE_CUDA
 
 RUN pip install http://download.pytorch.org/whl/cu90/torch-0.3.1-cp27-cp27mu-linux_x86_64.whl
-RUN pip install opencv-python torchvision==0.2.1 scikit-image cvbase pandas mmdnn
+RUN pip install -i https://pypi.tuna.tsinghua.edu.cn/simple scikit-build
+RUN pip install opencv-python==4.2.0.32 torchvision==0.2.1 scikit-image cvbase pandas protobuf==3.1.0 mmdnn==0.2.0
 
 WORKDIR /app
 ADD . /app

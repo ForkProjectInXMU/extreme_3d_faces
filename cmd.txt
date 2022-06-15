@@ -1,0 +1,2 @@
+docker run -it -d --name extreme3d -v /home/ming-t/will/extreme3d/extreme_3d_faces/share:/tmp/share extreme-3dmm-docker
+
