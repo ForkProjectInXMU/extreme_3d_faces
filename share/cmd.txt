@@ -1,0 +1,1 @@
+python testBatchModel.py flist.txt /result
